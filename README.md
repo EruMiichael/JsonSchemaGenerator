@@ -1,5 +1,8 @@
-# JsonSchemaGenerator
-A Json Schema Generator
+### JSON Schema Generator
+
+#### About
+
+A Json Schema Generator.
 
 This is a generic program that:
 
@@ -10,11 +13,14 @@ This is a generic program that:
 The schema output captures ONLY the attributes within the "message" key of the input JSON source data. All attributes withn the key "attributes" were excluded. 
 For the json data types:
 
-This program identifies what a string is and map accordingly in the JSON schema output, it also identifies what an integer is and map accordingly in the JSON schema output, it also identifies a string in an array as "enum" and maps the data type as enum and when the value in an array is another JSON object, the program map the data type as an array.
+#### Usage
+
+See [Usage](USAGE.md)
 
 #### Example
-From the json data in data_2.json, the data structure is shown below.
 
+From the json data in data_2.json, the data structure is shown below.
+```json
 {
     "attributes": {
       "appName": "ABCDEFGHIJKLMNOPQRSTUVW",
@@ -49,7 +55,7 @@ From the json data in data_2.json, the data structure is shown below.
       "topTraderFeed": true
     }
   }
-  
+
   it should generate a json schema as :
       },
     "user": {
