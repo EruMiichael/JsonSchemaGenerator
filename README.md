@@ -1,5 +1,5 @@
 ### JSON Schema Generator
-
+#### Author : Eru Michael
 #### About
 
 A Json Schema Generator.
@@ -11,11 +11,10 @@ This is a generic program that:
 - Dumps the output in (./schema/)
 
 The schema output captures ONLY the attributes within the "message" key of the input JSON source data. All attributes withn the key "attributes" were excluded. 
-For the json data types:
 
-#### Usage
+#### For the json data types:
+The program identifies what a string is and maps accordingly to a JSON schema output, it also identifies what an INTEGER is and maps accordingly to a JSON schema output, when the value in an array is a STRING, the program maps the data type as an ENUM and when the value in an array is another JSON object, the program maps the data type as an ARRAY.
 
-See [Usage](USAGE.md)
 
 #### Example
 
