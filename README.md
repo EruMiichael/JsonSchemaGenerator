@@ -10,7 +10,7 @@ This is a generic program that:
 - Sniffs the schema of the JSON file 
 - Dumps the output in (./schema/)
 
-The schema output captures ONLY the attributes within the "message" key of the input JSON source data. All attributes withn the key "attributes" were excluded. 
+The schema output captures ONLY the attributes within the "message" key of the input JSON source data. All attributes within the key "attributes" were excluded. 
 
 #### For the json data types:
 The program identifies what a string is and maps accordingly to a JSON schema output, it also identifies what an INTEGER is and maps accordingly to a JSON schema output, when the value in an array is a STRING, the program maps the data type as an ENUM and when the value in an array is another JSON object, the program maps the data type as an ARRAY.
