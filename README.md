@@ -15,7 +15,12 @@ The schema output captures ONLY the attributes within the "message" key of the i
 #### For the json data types:
 The program identifies what a string is and maps accordingly to a JSON schema output, it also identifies what an INTEGER is and maps accordingly to a JSON schema output, when the value in an array is a STRING, the program maps the data type as an ENUM and when the value in an array is another JSON object, the program maps the data type as an ARRAY.
 
-
+#### Dependencies
+json, 
+collections, 
+unittest, 
+sys, 
+os
 #### Example
 
 From the json data in data_2.json, the data structure is shown below.
